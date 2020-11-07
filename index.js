@@ -502,8 +502,6 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
       if (caption == '!sticker')
       {
-         conn.sendMessage(id, 'Tunggu,Sebentar Ya!' ,MessageType.text);
-}
          const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
 
          const
@@ -514,8 +512,6 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
          {
             let stik = fs.readFileSync('temp/' + jam + '.webp')
             conn.sendMessage(id, stik, MessageType.sticker)
-         conn.sendMessage(id, 'Yey Jadi!' ,MessageType.text);
-}
         });
       }
    }
