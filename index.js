@@ -512,7 +512,7 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
          {
             let stik = fs.readFileSync('temp/' + jam + '.webp')
             conn.sendMessage(id, stik, MessageType.sticker)
-        });
+         });
       }
    }
 
@@ -595,7 +595,8 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
       });
 
    }*/
-   
+
+
    /*if (text.includes("!nulis"))
    {
 
@@ -655,8 +656,7 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
             );
 
          });
-   }
-
+   }*/
 
    if (text.includes("!ptl cewek"))
    {
