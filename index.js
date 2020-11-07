@@ -12,10 +12,10 @@ const menu = require("./lib/menu.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 //
-const BotName = 'ApaJa Bot'; // Nama Bot Whatsapp
-const instagramlu = 'https://instagram.com/jokowi'; // Nama Instagramlu cok
-const whatsapplu = '0813-2806-3545'; // Nomor whatsapplu cok
-const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
+const BotName = 'SENSI BOT'; // Nama Bot Whatsapp
+const instagramlu = 'https://www.instagram.com/sensi.edtz_/'; // Nama Instagramlu cok
+const whatsapplu = '0859-6422-4017'; // Nomor whatsapplu cok
+const kapanbotaktif = '14 Jam'; // Kapan bot lu aktif
 const grupch1 = 'https://chat.whatsapp.com/FsAlnxqz6y2BhCQi5ayCLG'; // OFFICIAL GRUP LU 1
 const grupch2 = 'https://chat.whatsapp.com/KLW3UlFfeaH36Ucm5zRfCz'; // OFFICIAL GRUP LU 2
 //
