@@ -6,6 +6,7 @@ const fs = require("fs");
 const dl = require("./lib/downloadImage.js");
 const fetch = require('node-fetch');
 const urlencode = require("urlencode");
+const welkom = JSON.parse(fs.readFileSync('./lib/welcome.json'))
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
 const menu = require("./lib/menu.js");
