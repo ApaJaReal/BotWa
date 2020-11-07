@@ -644,14 +644,7 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
             var author = ${quotes.author}.contents().first().text();
             var kata = ${quotes.quotes}.contents().first().text();
 
-            conn.sendMessage(
-               id,
-               `
-          _${kata}_
-        
-    
-	*~${author}*
-         `, MessageType.text
+            conn.sendMessage(id,`_${kata}_/n*~${author}*`, MessageType.text
             );
 
          });
