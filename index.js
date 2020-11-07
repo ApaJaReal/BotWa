@@ -636,19 +636,27 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
 
    if (text.includes("!quotes"))
    {
-      var url = 'https://mhankbarbar.herokuapp.com/api/randomquotes'
+      var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
          .then((result) =>
          {
             let $ = cheerio.load(result.data);
-            var author = ${quotes.author}.contents().first().text();
-            var kata = ${quotes.quotes}.contents().first().text();
+            var author = $('a[class="auteurfbnaam"]').contents().first().text();
+            var kata = $('q[class="fbquote"]').contents().first().text();
 
-            conn.sendMessage(id,`_${kata}_/n*~${author}*`, MessageType.text
+            conn.sendMessage(
+               id,
+               `
+     _${kata}_
+        
+    
+	*~${author}*
+         `, MessageType.text
             );
 
          });
-   }*/
+   }
+
 
    if (text.includes("!ptl cewek"))
    {
