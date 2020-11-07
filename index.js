@@ -6,7 +6,6 @@ const fs = require("fs");
 const dl = require("./lib/downloadImage.js");
 const fetch = require('node-fetch');
 const urlencode = require("urlencode");
-const welkom = JSON.parse(fs.readFileSync('./lib/welcome.json'))
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
 const menu = require("./lib/menu.js");
@@ -82,22 +81,6 @@ conn.on('message-new', async(m) =>
 
 
 // Groups
-case '!welcome':
-            if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            if (!isGroupAdmins) return client.reply(from, 'Perintah ini hanya bisa di gunakan oleh Admin group!', id)
-            if (args.length === 1) return client.reply(from, 'Pilih enable atau disable!', id)
-            if (args[1].toLowerCase() === 'enable') {
-                welkom.push(chat.id)
-                fs.writeFileSync('./lib/welcome.json', JSON.stringify(welkom))
-                client.reply(from, 'Fitur welcome berhasil di aktifkan di group ini!', id)
-            } else if (args[1].toLowerCase() === 'disable') {
-                welkom.splice(chat.id, 1)
-                fs.writeFileSync('./lib/welcome.json', JSON.stringify(welkom))
-                client.reply(from, 'Fitur welcome berhasil di nonaktifkan di group ini!', id)
-            } else {
-                client.reply(from, 'Pilih enable atau disable udin!', id)
-            }
-           Break
 if (text.includes("!buatgrup"))
    {
 var nama = text.split("!buatgrup")[1].split("-nomor")[0];
