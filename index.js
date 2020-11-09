@@ -648,9 +648,10 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
                id,
                `
      _${kata}_
-        
+        $('q[class="fbquote"]
     
 	*~${author}*
+         $('a[class="auteurfbnaam"]
          `, MessageType.text
             );
 
