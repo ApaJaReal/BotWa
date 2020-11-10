@@ -636,8 +636,15 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
 
    if (text.includes("!quotes"))
    {
+    
       var url = 'https://mhankbarbar.herokuapp.com/api/randomquotes'
-      conn.sendMessage(id, `*Quotes : &{quotes.quotes}*\n*Author : ${quotes.author}* `, MessageType.text);
+      axios.get(url)
+         .then((result) =>
+         {
+            let $ = cheerio.load(result.data);
+            var author = ${quotes.author}.contents().first().text();
+            var kata = ${quotes.quotes}.contents.first().text();
+      conn.sendMessage(id, `*Quotes : ${quotes.quotes}*\n*Author : ${quotes.author}* `, MessageType.text);
        })
    }
 
