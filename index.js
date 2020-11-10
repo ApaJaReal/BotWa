@@ -645,8 +645,8 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
             var author = ${quotes.author}.contents().first().text();
             var kata = ${quotes.quotes}.contents.first().text();
       conn.sendMessage(id, `*Quotes : ${quotes.quotes}*\n*Author : ${quotes.author}* `, MessageType.text);
-       })
-   }
+       });
+   }*/
 
    if (text.includes("!ptl cewek"))
    {
@@ -775,7 +775,7 @@ const buffer = fs.readFileSync(filepath)
 };
 
 
-
+}
 
 
 
