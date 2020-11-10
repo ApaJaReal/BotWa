@@ -637,11 +637,9 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
    if (text.includes("!quotes"))
    {
       var url = 'https://mhankbarbar.herokuapp.com/api/randomquotes'
-      conn.sendMessage(id, '*Quotes : ${quotes.quotes}*
-                            *Author : ${quotes.author}* ', MessageType.text);
-
-         });
-   }*/
+      conn.sendMessage(id, `*Quotes : &{quotes.quotes}*\n*Author : ${quotes.author}* `, MessageType.text);
+       })
+   }
 
    if (text.includes("!ptl cewek"))
    {
