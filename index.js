@@ -111,12 +111,12 @@ console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
-if (text.includes("!say")){
+if (text.includes("hasay")){
   const teks = text.replace(/!say /, "")
 conn.sendMessage(id, teks, MessageType.text)
 }
 
-if (text.includes("!nulis")){
+if (text.includes("jsnulis")){
   const teks = text.replace(/!nulis /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/nulis?text=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
     let hasil = `Download sendiri ya hasilnya dibawah, soalnya kalo dikirim langsung hasilnya blur, Jangan Lupa Lupa Follow Instagram mimin yah https://instagram.com/_sadboy.ig\n\n${res.data.result}`;
@@ -124,7 +124,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/nulis?text=${teks}&apiKey=zFuV88pxc
 })
 }
 
-if (text.includes("!ytmp3")){
+if (text.includes("jjsytmp3")){
 const teks = text.replace(/!ytmp3 /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/yta?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
     let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
@@ -132,7 +132,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/yta?url=${teks}&apiKey=zFuV88px
 })
 }
 
-if (text.includes("!yt")){
+if (text.includes("jsjsyt")){
 const teks = text.replace(/!yt /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/ytv?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
     let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
@@ -140,7 +140,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/ytv?url=${teks}&apiKey=zFuV88px
 })
 }
 
-if (text.includes("!fb")){
+if (text.includes("sjjefb")){
 const teks = text.replace(/!fb /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/epbe?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
     let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nJudul: ${res.data.title}\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
@@ -148,7 +148,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/epbe?url=${teks}&apiKey=zFuV88p
 })
 }
 
-if (text.includes("!ig")){
+if (text.includes("sjjeg")){
 const teks = text.replace(/!ig /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/ig?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
     let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nLink: ${res.data.result}`;
@@ -156,7 +156,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/ig?url=${teks}&apiKey=zFuV88pxc
 })
 }
 
-if (text.includes("!twt")){
+if (text.includes("jsjsjwt")){
 const teks = text.replace(/!twt /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
     let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nJudul: ${res.data.title}\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
@@ -164,7 +164,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88p
 })
 }
 
-if (text.includes("!wiki")){
+if (text.includes("jwwiki")){
 const teks = text.replace(/!wiki /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/wiki?q=${teks}&lang=id&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
     let hasil = `Menurut Wikipedia:\n\n${res.data.result}`;
@@ -209,7 +209,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, menu.menu(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == '!quran'){
+else if (text == 'jeiiuran'){
 axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
     const sr = /{(.*?)}/gi;
     const hs = res.data.acak.id.ayat;
@@ -382,7 +382,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, donate.donate(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == '!DONATE'){
+else if (text == 'kkwjeNATE'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -419,7 +419,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, donate.donate(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == '!DONASI'){
+else if (text == '!DOhwhwNASI'){
   const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -456,7 +456,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, donate.donate(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == '!info'){
+else if (text == 'ikwkinfo'){
   const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -493,7 +493,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, info.info(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == '!ptl'){
+else if (text == 'jsptl'){
 conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
@@ -520,7 +520,7 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
-      if (is == '!pantun')
+      if (is == 'kisiqantun')
       {
 
          fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-pantun-pakboy.txt')
@@ -554,7 +554,7 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
          });
       }
    }
-if (text.includes("!yt"))
+if (text.includes("skkdyt"))
    {
       const url = text.replace(/!yt/, "");
       const exec = require('child_process').exec;
@@ -634,7 +634,7 @@ if (text.includes("!yt"))
       }
    }
 
-   if (text.includes("!nulis"))
+   if (text.includes("jjwwulis"))
    {
 
       const
@@ -690,7 +690,7 @@ if (text.includes("!yt"))
          });
       }
    }
-   if (text.includes("!quotes"))
+   if (text.includes("kjwquotes"))
    {
       var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
@@ -713,7 +713,7 @@ if (text.includes("!yt"))
          });
    }
 
-   if (text.includes("!ptl cewek"))
+   if (text.includes("kisstl cewek"))
    {
     var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl"];
     var cewe = items[Math.floor(Math.random() * items.length)];
@@ -742,7 +742,7 @@ if (text.includes("!yt"))
     });
     }
 
-   if (text.includes("!ptl cowok"))
+   if (text.includes("iistl cowok"))
    {
     var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy"];
     var cewe = items[Math.floor(Math.random() * items.length)];
@@ -771,7 +771,7 @@ if (text.includes("!yt"))
     });
     }
 
-if (text.includes("!randomanime"))
+if (text.includes("kisrandomanime"))
    {
     var items = ["anime girl", "anime cantik", "anime", "anime aesthetic"];
     var cewe = items[Math.floor(Math.random() * items.length)];
@@ -800,7 +800,7 @@ if (text.includes("!randomanime"))
     });
     }
     
-    if (msg.body.startsWith("!berita ")) {
+    if (msg.body.startsWith("sjisberita ")) {
 	   const keyword = msg.body.split("!berita ")[1];
 const { Detik } = require('indo-news-scraper');
 const imageToBase64 = require('image-to-base64');
@@ -836,7 +836,7 @@ ${url}
 });
    }
    
-   if (msg.body.startsWith("!pasangan ")) {
+   if (msg.body.startsWith("jjdjssangan ")) {
 var req = msg.body;
 var gh = req.split("!pasangan ")[1];
 
@@ -871,7 +871,7 @@ msg.reply(`
 });
 }
 
-if (msg.body.startsWith("!nama ")) {
+if (msg.body.startsWith("isjsnama ")) {
 
 var nama = msg.body.split("!nama ")[1];
 var req = urlencode(nama.replace(/ /g,"+"));
@@ -899,7 +899,7 @@ msg.reply(
 });
 }
 
-if (text.includes("!scdl")){
+if (text.includes("!jjcdl")){
 const fs = require("fs");
 const scdl = require("./lib/scdl");
 
@@ -911,7 +911,7 @@ scdl("https://m.soundcloud.com/abdul-muttaqin-701361735/lucid-dreams-gustixa-ft-
 
 
 
-  if (text.includes("!tts")) {
+  if (text.includes("kkatts")) {
   var teks = text.split("!ttsid ")[1];
   var path = require('path');
   var text1 = teks.slice(6);
