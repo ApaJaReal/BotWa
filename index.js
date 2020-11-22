@@ -12,7 +12,7 @@ const menu = require("./lib/menu.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 //
-const BotName = 'ApaJa BOT'; // Nama Bot Whatsapp
+const BotName = 'Sticker Bot'; // Nama Bot Whatsapp
 const instagramlu = 'https://www.instagram.com/Jokowi/'; // Nama Instagramlu cok
 const whatsapplu = '0813-2807-3545'; // Nomor whatsapplu cok
 const kapanbotaktif = '14 Jam'; // Kapan bot lu aktif
@@ -63,7 +63,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ApaJa`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
